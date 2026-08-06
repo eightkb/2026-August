@@ -1,6 +1,10 @@
 # Sessions - 20th August 2026
 Resources for the sessions at the 2026 edition of EightKB
 
+This repository contains session materials and resources from our amazing speakers. **[Learn more about EightKB](https://eightkb.com)** and join us for future events! You can find details about this event and upcoming sessions on the **[EightKB events page](https://eightkb.com/events)**.
+
+## Sessions
+
 Speaker | Session | Level | Recording
 --- | --- | --- | --- 
 **Chrissy LeMaire** | Enterprise Vibe Coding | 400 | 
