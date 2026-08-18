@@ -1,0 +1,30 @@
+--Query SQL Server DMVs for AG
+SELECT * FROM sys.dm_hadr_name_id_map			 
+SELECT * FROM sys.dm_hadr_instance_node_map			 
+SELECT * FROM sys.availability_replicas				 
+SELECT * FROM sys.availability_group_listeners			 
+SELECT * FROM sys.dm_hadr_availability_replica_states		 
+SELECT * FROM sys.dm_hadr_database_replica_cluster_states	 
+
+
+--List databases in an AG with their corresponding replicas, mapped to Cluster GUID values
+SELECT ag_resource_id, ag_group_id, ag_name, a.replica_id,b.replica_server_name, group_database_id, [database_name]
+FROM sys.dm_hadr_database_replica_cluster_states a
+INNER JOIN sys.availability_replicas b ON a.replica_id=b.replica_id
+INNER JOIN sys.dm_hadr_name_id_map c ON c.ag_id = b.group_id
+WHERE a.replica_id= (
+	SELECT replica_id from sys.availability_replicas WHERE replica_server_name='<instanceName>')
+
+SELECT ag_resource_id, ag_group_id, ag_name, a.replica_id,b.replica_server_name, group_database_id, [database_name]
+FROM sys.dm_hadr_database_replica_cluster_states a
+INNER JOIN sys.availability_replicas b ON a.replica_id=b.replica_id
+INNER JOIN sys.dm_hadr_name_id_map c ON c.ag_id = b.group_id
+WHERE a.replica_id= (
+	SELECT replica_id from sys.availability_replicas WHERE replica_server_name='<instanceName>')
+
+
+--Open Windows registry and map GUID values from DMVs to cluster database entries
+--WARNING: DO NOT MAKE CHANGES TO THE WINDOWS REGISTRY
+
+--Generate cluster error logs using PowerShell; review contents of section === Microsoft-Windows-FailoverClustering/Operational logs ===
+Get-ClusterLog
