@@ -23,7 +23,7 @@ WHERE a.replica_id= (
 	SELECT replica_id from sys.availability_replicas WHERE replica_server_name='<instanceName>')
 
 
---Open Windows registry and map GUID values from DMVs to cluster database entries
+--Open Windows registry and map GUID values from DMVs to cluster database entries -> HKLM\Cluster\Groups and HKLM\Cluster\Resources
 --WARNING: DO NOT MAKE CHANGES TO THE WINDOWS REGISTRY
 
 --Generate cluster error logs using PowerShell; review contents of section === Microsoft-Windows-FailoverClustering/Operational logs ===
