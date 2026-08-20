@@ -28,3 +28,13 @@ WHERE a.replica_id= (
 
 --Generate cluster error logs using PowerShell; review contents of section === Microsoft-Windows-FailoverClustering/Operational logs ===
 Get-ClusterLog
+
+--Additional resources
+The SQL Server DBA’s Guide to Windows Server Failover Clustering: The Interaction From a 10,000-ft View
+https://learnsqlserverhadr.com/sqldba-wsfc-ag01/
+
+The SQL Server DBA’s Guide to Windows Server Failover Clustering: The Engine Under the Hood – Part 1
+https://learnsqlserverhadr.com/sqldba-wsfc-ag02/
+
+The SQL Server DBA’s Guide to Windows Server Failover Clustering: The Engine Under the Hood – Part 2
+https://learnsqlserverhadr.com/sqldba-wsfc-ag03/
