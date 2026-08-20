@@ -1,0 +1,996 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Enterprise Vibe Coding · EightKB 2026</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="deck.css">
+</head>
+
+<body>
+<div id="viewport">
+  <div id="stage">
+    <!-- persistent spec frame (shared chrome) -->
+    <div class="frame" aria-hidden="true">
+      <div class="rule top"></div>
+      <div class="rule bottom"></div>
+      <div class="meta tl"><span class="wm">Eight<i>KB</i></span><span class="wm-year">2026</span></div>
+      <div class="meta bc">Chrissy LeMaire, MVP</div>
+    </div>
+
+    <!-- ===================== TITLE ===================== -->
+    <section class="slide s-title" data-section="cold open">
+      <h1 class="title" data-reveal>ENTERPRISE<br>VIBE CODING</h1>
+      <div class="event-line" data-reveal>
+        <span>EightKB 2026</span>
+        <span>Online</span>
+        <span>20 August</span>
+      </div>
+      <div class="by" data-reveal>
+        <span>Chrissy LeMaire</span>
+      </div>
+    </section>
+
+    <!-- ===================== WHO'S TALKING ===================== -->
+    <section class="slide s-bio s-bio--authority" data-section="who's talking">
+      <h2 class="bio-name" data-reveal>Chrissy LeMaire</h2>
+      <ul class="bio-creds" data-reveal>
+        <li>Microsoft MVP</li>
+        <li>GitHub Star</li>
+        <li>Creator of dbatools</li>
+      </ul>
+      <div class="bio-books" data-reveal>
+        <img class="bio-cover" src="images/genai-book.png" alt="Generative AI for PowerShell book cover">
+        <img class="bio-cover" src="images/dbatools-book.png" alt="Learn dbatools in a Month of Lunches book cover">
+      </div>
+    </section>
+
+    <!-- ===================== BIO, THE BAND ===================== -->
+    <section class="slide s-bio s-bio--cookbooks" data-section="who's talking">
+      <h2 class="bio-reveal-title" data-reveal>Also, five Cajun cookbooks.</h2>
+      <div class="bio-cookbook-band" data-reveal>
+        <a href="https://amzn.to/2qJFquE" target="_blank" rel="noopener"><img class="bio-cover" src="images/cajun-original.webp" alt="RealCajunRecipes.com The Cookbook, 15th Anniversary Edition"></a>
+        <a href="https://amzn.to/2CvcUj4" target="_blank" rel="noopener"><img class="bio-cover" src="images/cajun-thanksgiving.webp" alt="The Real Cajun Thanksgiving Cookbook"></a>
+        <a href="https://amzn.to/2OPJemF" target="_blank" rel="noopener"><img class="bio-cover" src="images/cajun-christmas.webp" alt="The Real Cajun Christmas Cookbook"></a>
+        <a href="https://amzn.to/38BAsS0" target="_blank" rel="noopener"><img class="bio-cover" src="images/cajun-mardigras.webp" alt="The Real Cajun Mardi Gras and Lent Cookbook"></a>
+        <a href="https://www.amazon.com/dp/B0FR1XLLK2?tag=realcajunreci-20" target="_blank" rel="noopener"><img class="bio-cover" src="images/cajun-icecream.webp" alt="The Real Cajun Ice Cream Cookbook"></a>
+      </div>
+    </section>
+
+    <!-- ===================== NINE SECONDS (COLD OPEN) ===================== -->
+    <section class="slide s-showcase" data-section="§00 · nine seconds">
+      <div class="sc-head">
+        <span class="sc-link muted" data-reveal style="--i:1">PocketOS · April 2026</span>
+      </div>
+      <figure class="sc-shot shot-full zoomable" data-reveal style="--i:2">
+        <img src="images/drop.png" alt="Incident timeline: a Cursor agent running Claude Opus found an over-permissioned API token in an unrelated file, dropped the PocketOS production database, deleted every backup, and verified the deletion. Total time: nine seconds.">
+      </figure>
+    </section>
+
+    <!-- ===================== VIBE CODING ===================== -->
+    <section class="slide s-close" data-section="§01 · vibe coding">
+      <h2 class="lede-xl" data-reveal style="--i:1">This failure has a name: <span class="mk">vibe coding.</span></h2>
+      <p class="close-note" data-reveal style="--i:2">“…fully give in to the vibes, embrace exponentials, and forget that the code even exists. I ‘Accept All’ always. I don’t read the diffs anymore.” <span class="mk">Andrej Karpathy, 2025</span></p>
+      <p class="close-note" data-reveal style="--i:3">Prompt. Run. Repeat until it mostly works, even when the code has grown beyond your understanding.</p>
+    </section>
+
+    <!-- ===================== ADOPTION EVIDENCE ===================== -->
+    <section class="slide s-stat" data-section="§02 · enterprise vibe engineering">
+      <div class="sc-head">
+        <div>
+          <h2 class="sc-title" data-reveal style="--i:1">But the argument is already over.</h2>
+        </div>
+      </div>
+      <div class="stat-row four" data-reveal style="--i:2">
+        <div class="stat lead">
+          <div class="v">65K</div>
+          <div class="l">engineers at JPMorgan Chase</div>
+          <div class="s">AI use tied to performance reviews</div>
+        </div>
+        <div class="stat">
+          <div class="v">0</div>
+          <div class="l">lines from senior Spotify engineers this year</div>
+          <div class="s">they steer, then review</div>
+        </div>
+        <div class="stat">
+          <div class="v">4M</div>
+          <div class="l">developer hours at Walmart</div>
+          <div class="s">saved, then expanded</div>
+        </div>
+        <div class="stat">
+          <div class="v">280K</div>
+          <div class="l">hours saved at Morgan Stanley</div>
+          <div class="s">legacy code rewritten, 2025</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TORVALDS ===================== -->
+    <section class="slide s-quote" data-section="§02 · enterprise vibe engineering">
+      <blockquote data-reveal style="--i:1">Linux is not one of those anti-AI projects.</blockquote>
+      <p class="attrib" data-reveal style="--i:2"><b>Linus Torvalds</b>, July 2026
+        <span class="attrib-more">A tool like the other tools. Objectors can fork it or walk away.</span>
+      </p>
+    </section>
+
+    <!-- ===================== THE OLD GUARD IS MOVING (CURL) ===================== -->
+    <section class="slide s-showcase" data-section="§02 · enterprise vibe engineering">
+      <div class="sc-head">
+        <div>
+          <h2 class="sc-title" data-reveal style="--i:1">Creator of curl ...</h2>
+        </div>
+        <a class="sc-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7468010497573978112/" target="_blank"
+          rel="noopener" data-reveal style="--i:1">source <span class="arr">↗</span></a>
+      </div>
+      <figure class="sc-shot shot-full zoomable" data-reveal style="--i:3">
+        <img src="images/positive.jpg"
+          alt="Daniel Stenberg on AI in security: sentiment over time, showing an upward turn toward pro-AI tooling">
+      </figure>
+    </section>
+
+<!-- ===================== THE GOVERNANCE GAP ===================== -->
+<section class="slide s-stat" data-section="§00 · nine seconds">
+  <div class="sc-head">
+    <div>
+      <h2 class="sc-title" data-reveal style="--i:1">But reach is wider than governance.</h2>
+    </div>
+    <span class="sc-link muted" data-reveal style="--i:1">liquibase · veracode · 2026</span>
+  </div>
+  <div class="stat-row" data-reveal style="--i:2">
+    <div class="stat lead">
+      <div class="v">96.5%</div>
+      <div class="l">of orgs have AI touching production databases</div>
+      <div class="s">Liquibase, 426 respondents</div>
+    </div>
+    <div class="stat">
+      <div class="v">28.1%</div>
+      <div class="l">have change governance that's enforced</div>
+      <div class="s">standardized <i>and</i> automated</div>
+    </div>
+    <div class="stat">
+      <div class="v">~55%</div>
+      <div class="l">of AI-generated code carries a known vuln</div>
+      <div class="s">Veracode, 150+ models · syntax is 95% fine</div>
+    </div>
+  </div>
+</section>
+
+    <!-- ===================== ENTERPRISE VIBE ENGINEERING ===================== -->
+    <section class="slide s-close" data-section="§02 · enterprise vibe engineering">
+      <h2 class="lede-xl" data-reveal style="--i:1">What is enterprise vibe coding?</h2>
+      <p class="close-note" data-reveal style="--i:2"><span class="mk">aka vibe engineering</span><br>AI-assisted development with testing, verification, governance, and automated enforcement built into the generation loop.</p>
+    </section>
+
+    <!-- ===================== BROWSER vs COMPUTER ===================== -->
+    <section class="slide s-versus" data-section="§01 · meet claude code">
+      <h2 class="vs-title" data-reveal style="--i:1">What changed?</h2>
+      <div class="vs-grid">
+        <div class="vs-col" data-reveal style="--i:2">
+          <h3 class="vs-where">Chatting in the browser</h3>
+          <p class="vs-who">claude.ai <span class="sep">·</span> chatgpt.com</p>
+          <p class="vs-desc">Lives in a tab. It can use uploads and connected apps, but generally can't inspect your local repo or run commands on your machine.</p>
+        </div>
+        <div class="vs-col accent" data-reveal style="--i:3">
+          <h3 class="vs-where">On your computer</h3>
+          <p class="vs-who">Claude Code <span class="sep">·</span> Codex <span class="sep">·</span> GitHub Copilot</p>
+          <p class="vs-desc">Lives on your machine. It reads your files and runs commands to make real changes. Usually inside a sandbox. Not always.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== THE LAB (MACHINE ACCESS) ===================== -->
+    <section class="slide s-showcase" data-section="§01 · meet claude code">
+      <div class="sc-head">
+        <div>
+          <h2 class="sc-title" data-reveal style="--i:1">It mapped my whole network</h2>
+        </div>
+        <a class="sc-link" data-reveal style="--i:2" href="https://blog.netnerds.net/lab" target="_blank"
+          rel="noopener">blog.netnerds.net/lab <span class="arr">↗</span></a>
+      </div>
+      <p class="sc-note" data-reveal style="--i:2">I handed Claude my machine and said, map it. It found the VMs, SQL
+        instances, subnets, and SSH tunnel, then made the diagram I needed.</p>
+      <figure class="sc-shot placeholder linked" data-reveal style="--i:3">
+        <span class="sc-ph">drop images/shot-lab.png · live HyperV topology snapshot</span>
+        <a href="https://blog.netnerds.net/lab" target="_blank" rel="noopener"><img src="images/shot-lab.png"
+            alt="Live HyperV lab topology mapped by Claude"
+            onload="this.closest('.sc-shot').classList.remove('placeholder')" onerror="this.remove()"></a>
+      </figure>
+    </section>
+
+    <!-- ===================== THE HARNESS ===================== -->
+    <section class="slide s-showcase" data-section="§01 · meet claude code">
+      <div class="sc-head">
+        <div>
+          <h2 class="sc-title" data-reveal style="--i:1">The difference is the harness</h2>
+        </div>
+        <span class="sc-link muted" data-reveal style="--i:2">model + tools + hooks + context</span>
+      </div>
+      <figure class="sc-shot shot-full zoomable" data-reveal style="--i:3">
+        <img src="images/harness.png" alt="AI harness diagram: a planner, execution loop, tool calls, hooks, and guardrails orchestrating an LLM to produce diffs, commits, and reports">
+      </figure>
+    </section>
+
+    <!-- ===================== CLAUDE CODE · CLI ===================== -->
+    <section class="slide s-showcase" data-section="§01 · meet claude code">
+      <div class="sc-head">
+        <div>
+          <h2 class="sc-title" data-reveal style="--i:1">Where I spend my day</h2>
+        </div>
+        <span class="sc-link muted" data-reveal style="--i:2">mac · windows · linux</span>
+      </div>
+      <p class="sc-note" data-reveal style="--i:2">I often make plans first.</p>
+      <figure class="sc-shot linked" data-reveal style="--i:3">
+        <a href="https://claude.com/claude-code" target="_blank" rel="noopener"><img src="images/shot-cc-cli.png" alt="Claude Code running in a terminal, Opus 4.8 with 1M context"></a>
+      </figure>
+    </section>
+
+    <!-- ===================== CLAUDE CODE · VS CODE ===================== -->
+    <section class="slide s-showcase" data-section="§01 · meet claude code">
+      <div class="sc-head">
+        <div>
+          <h2 class="sc-title" data-reveal style="--i:1">Got ChatGPT? You've got Codex</h2>
+        </div>
+        <span class="sc-link muted" data-reveal style="--i:2">openai codex</span>
+      </div>
+      <p class="sc-note" data-reveal style="--i:2">Same idea, different company and model.</p>
+      <figure class="sc-shot shot-full zoomable" data-reveal style="--i:3">
+        <img src="images/shot-cc-vscode.png" alt="OpenAI Codex built a deck!">
+      </figure>
+    </section>
+
+    <!-- ===================== GITHUB COPILOT ===================== -->
+    <section class="slide s-showcase" data-section="§02 · the others">
+      <div class="sc-head">
+        <div>
+          <h2 class="sc-title" data-reveal style="--i:1">GitHub Copilot is back!</h2>
+        </div>
+        <span class="sc-link muted" data-reveal style="--i:2">usage-based billing</span>
+      </div>
+      <p class="sc-note" data-reveal style="--i:2">GitHub moved to usage-based billing. June was rough but cheaper models made it usable again. And it's got a great desktop app!</p>
+      <figure class="sc-shot shot-full zoomable" data-reveal style="--i:3">
+        <img src="images/github-billing.png" alt="GitHub Copilot Desktop">
+      </figure>
+    </section>
+
+    <!-- ===================== FINISHED PROJECTS (INTRO) ===================== -->
+    <section class="slide s-close" data-section="§03 · what i shipped">
+      <h2 class="lede-xl" data-reveal style="--i:1">A bit of what I've done:</h2>
+      <p class="close-note" data-reveal style="--i:2"></p>
+    </section>
+
+    <!-- ===================== dbatools.io ===================== -->
+    <section class="slide s-showcase" data-section="§03 · what i shipped">
+      <div class="sc-head">
+        <div>
+          <h2 class="sc-title" data-reveal style="--i:1">dbatools.io</h2>
+        </div>
+        <a class="sc-link" data-reveal style="--i:2" href="https://dbatools.io" target="_blank" rel="noopener">dbatools.io <span class="arr">↗</span></a>
+      </div>
+      <p class="sc-note" data-reveal style="--i:2">Gave Claude the old HTML. Got back dark mode and a getting-started guide that actually helps. Note the design.</p>
+      <figure class="sc-shot shot-full linked" data-reveal style="--i:3">
+        <a href="https://dbatools.io" target="_blank" rel="noopener"><img src="images/shot-dbatools.png" alt="Redesigned dbatools.io homepage with dark hero terminal"></a>
+      </figure>
+    </section>
+
+    <!-- ===================== realcajunrecipes.com ===================== -->
+    <section class="slide s-showcase" data-section="§03 · what i shipped">
+      <div class="sc-head">
+        <div>
+          <h2 class="sc-title" data-reveal style="--i:1">realcajunrecipes.com</h2>
+        </div>
+        <a class="sc-link" data-reveal style="--i:2" href="https://realcajunrecipes.com" target="_blank" rel="noopener">realcajunrecipes.com <span class="arr">↗</span></a>
+      </div>
+      <p class="sc-note" data-reveal style="--i:2">Twenty years of recipes, off WordPress, now static and unhackable. Then the part I wanted for years: French French at scale.</p>
+      <figure class="sc-shot linked" data-reveal style="--i:3">
+        <a href="https://realcajunrecipes.com" target="_blank" rel="noopener"><img src="images/shot-realcajunrecipes.png" alt="realcajunrecipes.com themed cookbook collection page"></a>
+      </figure>
+    </section>
+
+    <!-- ===================== BLOG MAINTENANCE ===================== -->
+    <section class="slide s-showcase" data-section="§04 · maintenance work">
+      <div class="sc-head">
+        <div>
+          <h2 class="sc-title" data-reveal style="--i:1">100+ posts updated, one prompt</h2>
+        </div>
+        <a class="sc-link" data-reveal style="--i:2" href="https://github.com/dataplat/web/blob/html/prompts/blog-refresh.md" target="_blank" rel="noopener">blog-refresh.md <span class="arr">↗</span></a>
+      </div>
+      <p class="sc-note" data-reveal style="--i:2">Not content generation. Maintenance. Links, screenshots, commands, Twitter embeds. The work that always loses to everything else.</p>
+      <figure class="sc-shot shot-full linked" data-reveal style="--i:3">
+        <a href="https://github.com/dataplat/web/blob/html/prompts/blog-refresh.md" target="_blank" rel="noopener"><img src="images/ai-cli-blog.png" alt="Update your blog with an AI CLI hero image"></a>
+      </figure>
+    </section>
+
+    <!-- ===================== BIZ PAPERS ===================== -->
+    <section class="slide s-showcase" data-section="§04 · maintenance work">
+      <div class="sc-head">
+        <div>
+          <h2 class="sc-title" data-reveal style="--i:1">I wrote business papers, too</h2>
+        </div>
+        <span class="sc-link muted" data-reveal style="--i:2">Using the same methods as software engineering :O</span>
+      </div>
+      <figure class="sc-shot shot-full zoomable" data-reveal style="--i:3">
+        <img src="images/paper.png" alt="papers">
+      </figure>
+    </section>
+
+    <!-- ===================== BIZ PAPERS ===================== -->
+    <section class="slide s-showcase" data-section="§04 · maintenance work">
+      <div class="sc-head">
+        <div>
+          <h2 class="sc-title" data-reveal style="--i:1">And a game!</h2>
+        </div>
+        <span class="sc-link muted" data-reveal style="--i:2">Again, using the same methods as software engineering</span>
+      </div>
+      <figure class="sc-shot shot-full zoomable" data-reveal style="--i:3">
+        <img src="images/wishbrin.png" alt="Wishbringer">
+      </figure>
+    </section>
+
+    <!-- ===================== THE ONE I CAN'T NAME YET ===================== -->
+    <section class="slide s-teaser" data-section="§04 · maintenance work">
+      <div class="sc-head">
+        <div>
+          <h2 class="sc-title" data-reveal>Aaaaaand a project I can't talk about just yet.</h2>
+        </div>
+        <span class="sc-link muted" data-reveal="with-prev"></span>
+      </div>
+      <div class="teaser-frame" data-reveal>
+        <span class="teaser-mark" aria-hidden="true">?</span>
+      </div>
+    </section>
+
+    <!-- ===================== ENTERPRISE TRANSITION ===================== -->
+    <section class="slide s-close" data-section="§05 · enterprise transition">
+      <h2 class="lede-xl" data-reveal style="--i:1">You saw what the agent can build.</h2>
+      <p class="close-note" data-reveal style="--i:2">For it to belong in an enterprise: <span class="mk">sandboxes, permissions, hooks, skills, mcp, ci/cd.</span></p>
+    </section>
+
+    <!-- ===================== THE SANDBOX ===================== -->
+    <section class="slide s-close" data-section="guardrails">
+      <h2 class="lede-xl" data-reveal>First, run it in a sandbox.</h2>
+      <p class="close-note" data-reveal>Before anything, decide <span class="mk">how far the damage can reach</span>. A container, a VM, a dev box with no route to production. I let agents loose in my lab precisely because it's a lab.</p>
+    </section>
+
+    <!-- ===================== PERMISSION MODES ===================== -->
+    <section class="slide s-list" data-section="guardrails">
+      <div class="sc-head">
+        <div>
+          <h2 class="sc-title" data-reveal>Then pick your permission mode</h2>
+        </div>
+        <span class="sc-link muted" data-reveal="with-prev">settings.json · defaultMode</span>
+      </div>
+      <div class="hooks" data-reveal>
+        <div class="hook"><span class="hk">plan</span><span class="hd">Explores and reads, but won't touch your source files.</span></div>
+        <div class="hook"><span class="hk">dontAsk</span><span class="hd">Never prompts. Anything not on your allowlist is
+            denied outright.</span></div>
+        <div class="hook"><span class="hk">manual</span><span class="hd">Asks the first time it uses each tool. Previous default.</span></div>
+
+        <div class="hook"><span class="hk">acceptEdits</span><span class="hd">File edits and <code>mkdir</code>/<code>mv</code>/<code>cp</code> go through. The rest still asks.</span></div>
+        <div class="hook"><span class="hk">bypassPermissions</span><span class="hd"><code>--dangerously-skip-permissions</code>. Sandbox only. <code>rm -rf /</code> still prompts.</span></div><div class="hook"><span class="hk">auto</span><span class="hd"><span class="mk">What I run.</span> Approves as it goes,
+            checked against what I actually asked for.</span></div>
+      </div>
+      <p class="sc-note" data-reveal><span class="mk">Consider a <strong>reasonable balance</strong>.</span></p>
+    </section>
+
+    <!-- ===================== THE FORBIDDEN LIST, TWO TIERS ===================== -->
+    <section class="slide s-term s-term--compact" data-section="guardrails">
+      <div class="sc-head">
+        <div>
+          <h2 class="sc-title" data-reveal>Auto-approve works best with a deny list</h2>
+        </div>
+        <span class="sc-link muted" data-reveal="with-prev">settings.json</span>
+      </div>
+      <div class="term term--tight" data-reveal>
+        <div class="term-bar"><span class="ev">permissions.deny</span><span>settings.json: blocks the shape, costs nothing</span></div>
+        <div class="term-body">Bash(rm -rf:*)            <span class="dim">catastrophic deletion</span>
+Bash(git push:*)          <span class="dim">never without a human</span>
+Bash(git add -A:*)        <span class="dim">stages other sessions' work too</span>
+Bash(git add .:*)         <span class="dim">stages other sessions' work too</span>
+Bash(git reset --hard:*)  <span class="dim">discards uncommitted work</span></div>
+      </div>
+    </section>
+
+    <!-- ===================== THE SHADY-LOOKING ALLOW LIST ===================== -->
+    <section class="slide s-term s-term--paired" data-section="guardrails">
+      <div class="sc-head">
+        <div>
+          <h2 class="sc-title" data-reveal>Also an allow and an ask list</h2>
+        </div>
+        <span class="sc-link muted" data-reveal="with-prev">settings.json</span>
+      </div>
+      <div class="term term--tight" data-reveal>
+        <div class="term-bar"><span class="ev">permissions.allow</span><span>looks dangerous, fine here, pre-approved</span></div>
+        <div class="term-body">Remove-DbaDatabase -Database ScratchDb   <span class="ok">ALLOWED</span>  <span class="dim">rebuilt by script every night</span>
+Remove-Item .\build\ -Recurse -Force     <span class="ok">ALLOWED</span>  <span class="dim">build output, regenerated</span>
+Restart-DbaService -SqlInstance dev01    <span class="ok">ALLOWED</span>  <span class="dim">my box, nobody else connects</span></div>
+      </div>
+      <div class="term term--tight" data-reveal>
+        <div class="term-bar"><span class="ev">permissions.ask</span></div>
+        <div class="term-body">Copy-DbaDatabase         <span class="dim">the command name matches</span>
+Restore-DbaDatabase      <span class="dim">-WithReplace overwrites the live database</span></div>
+      </div>
+    </section>
+
+    <!-- ===================== THREE TERMS, IN SQL ===================== -->
+    <section class="slide s-table" data-section="hooks">
+      <div class="sc-head"><div>
+        <h2 class="sc-title" data-reveal>Hooks, skills, and MCPs: familiar concepts</h2>
+      </div></div>
+      <div class="tbl" data-reveal>
+        <table>
+          <thead>
+            <tr><th>Agent term</th><th>SQL Server equivalent</th><th>Definition</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="k">Hooks</td><td>Triggers</td><td>Scripts that fire on agent events and can block the action</td></tr>
+            <tr><td class="k">Skills</td><td>Stored procedures</td><td>Named commands the agent loads and runs on demand</td></tr>
+            <tr><td class="k">MCP</td><td>Linked servers</td><td>One protocol that connects to other systems</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ===================== THE ANCHOR ===================== -->
+    <section class="slide s-close" data-section="hooks">
+      <h2 class="lede-xl" data-reveal>The model can ignore CLAUDE.md.<br>It can't ignore a hook*</h2>
+      <p class="close-note" data-reveal>Instruction files are polite <strong>requests</strong> that can be forgotten. Hooks are <strong>enforcement</strong> that fire <span class="mk">every single time</span>.</p>
+    </section>
+
+    <!-- ===================== THE ASTERISK ===================== -->
+    <section class="slide s-list" data-section="hooks">
+      <div class="sc-head">
+        <div>
+          <h2 class="sc-title" data-reveal>*Three ways it gets past one anyway</h2>
+        </div>
+        <span class="sc-link muted" data-reveal="with-prev">the check, not the hook</span>
+      </div>
+      <div class="hooks stack" data-reveal>
+        <div class="hook"><span class="hk">model-judged</span><span class="hd">The hook asks a model whether the work is done.</span></div>
+        <div class="hook"><span class="hk">deleted, not done</span><span class="hd">It removed the <code>TODO</code> comment instead of the TODO.</span></div>
+        <div class="hook"><span class="hk">false positives</span><span class="hd">Flags pre-existing findings, so "that was already there" is sometimes true.</span></div>
+      </div>
+    </section>
+
+    <!-- ===================== EVENTS, IN DBA TERMS ===================== -->
+    <section class="slide s-table" data-section="hooks">
+      <div class="sc-head"><div>
+        <h2 class="sc-title" data-reveal>Hooks are triggers for your agent</h2>
+      </div></div>
+      <div class="tbl" data-reveal>
+        <table>
+          <thead>
+            <tr><th>Event</th><th>SQL Server equivalent</th><th>Fires</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="k">SessionStart</td><td>Logon trigger</td><td>New session begins</td></tr>
+            <tr><td class="k">PreToolUse</td><td>DDL trigger · it can ROLLBACK</td><td>Before every write or command</td></tr>
+            <tr><td class="k">PostToolUse</td><td>AFTER trigger, minus ROLLBACK</td><td>After the tool ran</td></tr>
+            <tr><td class="k">Stop</td><td>The review before COMMIT</td><td>When it claims it's done</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ===================== WHAT A RULE CAN'T READ ===================== -->
+    <section class="slide s-term s-term--compact" data-section="hooks">
+      <div class="sc-head">
+        <div>
+          <h2 class="sc-title" data-reveal>A hook reads the whole command</h2>
+        </div>
+        <span class="sc-link muted" data-reveal="with-prev">PreToolUse · Bash</span>
+      </div>
+      <div class="term term--tight" data-reveal>
+        <div class="term-bar"><span class="ev">PreToolUse</span><span>Goes beyond specific commands</span></div>
+        <div class="term-body">DROP DATABASE Prod   <span class="deny">BLOCKED</span>  <span class="dim">worst case, stopped</span>
+DELETE FROM          <span class="deny">BLOCKED</span>  <span class="dim">soft deletes only: IsDeleted = 1</span>
+TRUNCATE TABLE       <span class="deny">BLOCKED</span>  <span class="dim">a deny rule can't see into a string</span>
+xp_cmdshell          <span class="deny">BLOCKED</span>  <span class="dim">shell access from inside a query</span>
+OPENQUERY            <span class="deny">BLOCKED</span>  <span class="dim">credentials to another server</span>
+NVARCHAR(MAX)        <span class="deny">BLOCKED</span>  <span class="dim">no inefficient datatypes</span>
+      </div>
+    </section>
+
+    <!-- ===================== A COMPLETE HOOK ===================== -->
+    <section class="slide s-code" data-section="hooks">
+      <div class="sc-head">
+        <div>
+          <h2 class="sc-title" data-reveal>A hook is just a script</h2>
+        </div>
+        <span class="sc-link muted" data-reveal="with-prev">PreToolUse · Write|Edit</span>
+      </div>
+      <div class="code" data-reveal>
+        <div class="ln">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15</div>
+        <div class="src"><span class="c">#!/usr/bin/env pwsh</span>
+$payload = [Console]::In.ReadToEnd() | <span class="k">ConvertFrom-Json</span>
+$file = $payload.tool_input.file_path
+$body = $payload.tool_input.content
+
+<span class="k">if</span> ($file -notlike <span class="st">'*.sql'</span>) { <span class="k">exit</span> 0 }
+
+$big = [regex]::Matches($body, <span class="st">'NVARCHAR\((\d+)\)'</span>) |
+    <span class="k">Where-Object</span> { [int]$_.Groups[1].Value -gt 4000 } |
+    <span class="k">ForEach-Object</span> { $_.Groups[1].Value }
+
+<span class="k">if</span> ($big) {
+    <span class="k">Write-Error</span> <span class="st">"BLOCKED: NVARCHAR($big) exceeds the 4000 maximum."</span>
+    <span class="k">exit</span> 2
+}</div>
+      </div>
+    </section>
+
+    <!-- ===================== RUNTIME OVERHEAD ===================== -->
+    <section class="slide s-table" data-section="hooks">
+      <div class="sc-head"><div>
+        <h2 class="sc-title" data-reveal>PowerShell is slow :(</h2>
+      </div></div>
+      <figure class="sc-shot shot-full" data-reveal>
+        <img src="images/startup.png"
+          alt="Startup speeds">
+      </figure>
+      <p class="tbl-note" data-reveal><center>Hooks fire on every PreToolUse and PostToolUse event, hundreds of times a session.</center></p>
+    </section>
+
+    <!-- ===================== EXIT 2 ===================== -->
+    <section class="slide s-table" data-section="hooks">
+      <div class="sc-head"><div>
+        <h2 class="sc-title" data-reveal>How a hook stops the write</h2>
+      </div></div>
+      <div class="tbl" data-reveal>
+        <table>
+          <thead>
+            <tr><th>Hook output</th><th>SQL Server equivalent</th><th>What happens</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="k">exit 2</td><td>ROLLBACK</td><td>Stops the write. The tool call never runs and the file is untouched.</td></tr>
+            <tr><td class="k">stderr</td><td>THROW</td><td>Tells the model why it stopped, and that becomes the next instruction.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ===================== PRETOOLUSE, SIX SQL RULES ===================== -->
+    <section class="slide s-list" data-section="hooks">
+      <div class="sc-head"><div>
+        <h2 class="sc-title" data-reveal>Six SQL rules, enforced</h2>
+      </div></div>
+      <div class="hooks stack" data-reveal>
+        <div class="hook"><span class="hk">trust-cert</span><span class="hd"><code>TrustServerCertificate = $true</code> must never ship.</span></div>
+        <div class="hook"><span class="hk">sql-interpolation</span><span class="hd">No <code>$"SELECT {name}"</code>. Parameterized SQL or blocked.</span></div>
+        <div class="hook"><span class="hk">nvarchar-max</span><span class="hd">No <code>NVARCHAR(MAX)</code> without a written reason.</span></div>
+        <div class="hook"><span class="hk">sequential-guid</span><span class="hd">Clustered PKs use <code>NEWSEQUENTIALID()</code> to prevent page splits.</span></div>
+        <div class="hook"><span class="hk">audit-columns</span><span class="hd">Every table must contain the audit columns.</span></div>
+        <div class="hook"><span class="hk">drop-guard</span><span class="hd"><code>DROP</code> and <code>TRUNCATE</code> never reach the wire.</span></div>
+      </div>
+    </section>
+
+    <!-- ===================== PRETOOLUSE, FOUR GENERAL RULES ===================== -->
+    <section class="slide s-list" data-section="hooks">
+      <div class="sc-head"><div>
+        <h2 class="sc-title" data-reveal>Four general rules, enforced</h2>
+      </div></div>
+      <div class="hooks stack" data-reveal>
+        <div class="hook"><span class="hk">read-before-edit</span><span class="hd">Forces a fresh read before any mutation.</span></div>
+        <div class="hook"><span class="hk">file-size-cop</span><span class="hd">Warns past a line-count threshold, so no file grows into a monster.</span></div>
+        <div class="hook"><span class="hk">credential-sniff</span><span class="hd">Blocks reads and greps across <code>.env</code>, keys, and anything that seems like a secret.</span></div>
+        <div class="hook"><span class="hk">tdd-gate</span><span class="hd">PreToolUse blocks code without a failing test first. Stop runs the suite once the turn ends.</span></div>
+      </div>
+    </section>
+
+    <!-- ===================== THE TDD GATE ===================== -->
+    <section class="slide s-term s-term--compact" data-section="hooks">
+      <div class="sc-head">
+        <div>
+          <h2 class="sc-title" data-reveal>Claude skips tests.</h2>
+        </div>
+        <span class="sc-link muted" data-reveal="with-prev">PreToolUse</span>
+      </div>
+      <div class="term" data-reveal>
+        <div class="term-bar"><span class="ev">PreToolUse</span><span>tdd-gate</span></div>
+        <div class="term-body"><span class="deny">BLOCKED</span> TDD-GATE
+Edit to scripts/Reconcile.ps1 with no failing test on record:
+  tests/Reconcile.Tests.ps1   <span class="dim">last run: 14 passed, 0 failed</span>
+
+Instruction: write a failing test for this change, then edit the code.</div>
+      </div>
+    </section>
+
+    <!-- ===================== THE ADVERSARIAL REVIEWER ===================== -->
+    <section class="slide s-list" data-section="hooks">
+      <div class="sc-head">
+        <div>
+          <h2 class="sc-title" data-reveal>The adversarial reviewer</h2>
+        </div>
+        <span class="sc-link muted" data-reveal="with-prev">Stop · every turn</span>
+      </div>
+      <div class="hooks" data-reveal>
+        <div class="hook"><span class="hk">the diff</span><span class="hd">Everything this session wrote, gathered the moment Claude tries to stop.</span></div>
+        <div class="hook"><span class="hk">rival model</span><span class="hd">Reviewed by a competing vendor's model. It has no stake in calling this work done.</span></div>
+        <div class="hook"><span class="hk">read-only</span><span class="hd">The reviewer can't edit a thing. Findings come back and Claude does the fixing.</span></div>
+        <div class="hook"><span class="hk">the verdict</span><span class="hd"><code>CLEAN</code> lets the turn end. <code>CHANGES_REQUESTED</code> blocks it. So does a garbled verdict.</span></div>
+        <div class="hook"><span class="hk">the ledger</span><span class="hd">A false positive gets a written ruling and stays suppressed. The ruling is itself reviewed.</span></div>
+        <div class="hook"><span class="hk">three strikes</span><span class="hd">After three blocked rounds the gate drops to an advisory, so a dispute can't loop forever.</span></div>
+      </div>
+    </section>
+
+    <!-- ===================== ADVERSARIAL REVIEW ===================== -->
+    <section class="slide s-term s-term--compact" data-section="hooks">
+      <div class="sc-head">
+        <div>
+          <h2 class="sc-title" data-reveal>Claude lies and even Fable gets corrected</h2>
+        </div>
+        <span class="sc-link muted" data-reveal="with-prev">Stop · cross-model review</span>
+      </div>
+      <div class="term" data-reveal>
+        <div class="term-bar"><span class="ev">Stop</span><span>adversarial review, every turn</span></div>
+        <div class="term-body"><span class="dim">diff of this session's changes → rival model, read-only</span>
+
+Finding: Unfinished work in files changed this session
+sql/Orders.sql:42 <span class="dim">TODO: implement retry-safe merge</span>
+scripts/Reconcile.ps1:88 <span class="dim">stub implementation</span>
+
+Verdict: <span class="deny">CHANGES_REQUESTED</span>
+</div>
+      </div>
+    </section>
+
+    <!-- ===================== THE SCALE ===================== -->
+    <section class="slide s-stat" data-section="hooks">
+      <div class="sc-head">
+        <div>
+          <h2 class="sc-title" data-reveal>One production project, today</h2>
+        </div>
+      </div>
+      <div class="stat-row" data-reveal>
+        <div class="stat lead">
+          <div class="v">144</div>
+          <div class="l">hooks enforcing my rules</div>
+          <div class="s">PreToolUse · PostToolUse · Stop</div>
+        </div>
+        <div class="stat">
+          <div class="v">55</div>
+          <div class="l">skills teaching workflows</div>
+          <div class="s">repeatable, on-demand instructions</div>
+        </div>
+        <div class="stat">
+          <div class="v">4</div>
+          <div class="l">MCPs connecting live systems</div>
+          <div class="s">data the model queries itself, mid-task</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== THE TOKEN BILL ===================== -->
+    <section class="slide s-table" data-section="hooks">
+      <div class="sc-head"><div>
+        <h2 class="sc-title" data-reveal>144 hooks. What's the token bill?</h2>
+      </div></div>
+      <div class="tbl" data-reveal>
+        <table>
+          <thead>
+            <tr><th>Moment</th><th>What fires</th><th>Context tokens</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="k">144 hooks registered</td><td>harness-side, never sent to the model</td><td>0</td></tr>
+            <tr><td class="k">Write passes</td><td>~50 guard scripts, all silent</td><td>0</td></tr>
+            <tr><td class="k">Turn ends clean</td><td>14 Stop checks, all silent</td><td>0</td></tr>
+            <tr><td class="k">Write blocked</td><td>two lines of stderr</td><td>~50</td></tr>
+            <tr><td class="k">Risky prompt</td><td>threat-model reminder</td><td>~300</td></tr>
+            <tr><td class="k">Start · resume · compact</td><td>project rules re-injected</td><td>~1,000</td></tr>
+            <tr><td class="k hi">Review says no</td><td class="hi">findings + a whole extra turn</td><td class="hi">thousands</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ===================== CACHE VS WINDOW ===================== -->
+    <section class="slide s-close" data-section="hooks">
+      <h2 class="lede-xl" data-reveal>Caching keeps hooks cheap.</h2>
+      <p class="close-note" data-reveal>But hooks may make your context longer.</p>
+    </section>
+
+
+    <!-- ===================== SKILLS ===================== -->
+    <section class="slide s-close" data-section="skills &amp; mcp">
+      <h2 class="lede-xl" data-reveal>Skills are stored procedures<br>for your agent.</h2>
+      <p class="close-note" data-reveal>You know you need one when <span class="mk">Claude does it wrong unless you explain how.</span></p>
+    </section>
+
+    <!-- ===================== THE SKILLS I ACTUALLY RUN ===================== -->
+    <section class="slide s-list" data-section="skills &amp; mcp">
+      <div class="sc-head"><div>
+        <h2 class="sc-title" data-reveal>The ones I actually run</h2>
+      </div></div>
+      <div class="hooks" data-reveal>
+        <div class="hook"><span class="hk">/impeccable</span><span class="hd">Skilled in making pretty websites.</span></div>
+        <div class="hook"><span class="hk">/humanizer</span><span class="hd">Removes AI-speak.</span></div>
+        <div class="hook"><span class="hk">/doublecheck</span><span class="hd">Prove it works. Then prove it again.</span></div>
+        <div class="hook"><span class="hk">/build</span><span class="hd">How to build all parts of the project.</span></div>
+        <div class="hook"><span class="hk">/new-dba-command</span><span class="hd">How to create a new dbatools command.</span></div>
+        <div class="hook"><span class="hk">/fix-ci</span><span class="hd">Reads runner logs, fixes the root cause.</span></div>
+      </div>
+    </section>
+
+    <!-- ===================== A SKILL IS JUST MARKDOWN ===================== -->
+    <section class="slide s-code" data-section="skills &amp; mcp">
+      <div class="sc-head">
+        <div>
+          <h2 class="sc-title" data-reveal>A skill is just markdown</h2>
+        </div>
+        <span class="sc-link muted" data-reveal="with-prev">fix-ci/SKILL.md</span>
+      </div>
+      <div class="code" data-reveal>
+        <div class="ln">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13</div>
+        <div class="src"><span class="c">---</span>
+<span class="k">name:</span> fix-ci
+<span class="k">description:</span> Investigate and fix failing GitHub Actions CI.
+  <span class="c"># ^ this line is the trigger. it's how the agent</span>
+  <span class="c">#   decides when to load the skill</span>
+<span class="c">---</span>
+
+<span class="c"># Fix CI</span>
+
+<span class="k">1.</span> Find failures: <span class="st">gh run list --limit 10</span>
+<span class="k">2.</span> Get logs: <span class="st">gh run view &lt;run-id&gt; --log-failed</span>
+<span class="k">3.</span> Diagnose the root cause.
+<span class="k">4.</span> Fix it. <span class="k">Never disable the test.</span></div>
+      </div>
+    </section>
+
+    <!-- ===================== HOOKS ENFORCING SKILLS ===================== -->
+    <section class="slide s-code" data-section="skills &amp; mcp">
+      <div class="sc-head">
+        <div>
+          <h2 class="sc-title" data-reveal>A hook can enforce a skill</h2>
+          <p class="sc-note" data-reveal>The model decides whether to load a skill, this hook forces it to load.</p>
+        </div>
+        <span class="sc-link muted" data-reveal="with-prev">PostToolUse · .claude/settings.json</span>
+      </div>
+      <div class="code" data-reveal>
+        <div class="ln">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13</div>
+        <div class="src">{
+  <span class="k">"hooks"</span>: {
+    <span class="k">"PostToolUse"</span>: [{
+      <span class="k">"matcher"</span>: <span class="st">"Write"</span>,
+      <span class="k">"hooks"</span>: [{
+        <span class="k">"type"</span>: <span class="st">"agent"</span>,
+        <span class="k">"if"</span>: <span class="st">"Write(**/*.md)"</span>,
+        <span class="k">"prompt"</span>: <span class="st">"Run the humanizer skill on the file in $ARGUMENTS."</span>,
+        <span class="k">"timeout"</span>: 120
+      }]
+    }]
+  }
+}</div></div></section>
+
+    <!-- ===================== STEAL MATT POCOCK'S SKILLS ===================== -->
+    <section class="slide s-close" data-section="skills &amp; mcp">
+      <h2 class="lede-xl" data-reveal>Go install Matt Pocock's skills.</h2>
+      <p class="close-note" data-reveal>The Total TypeScript guy publishes his entire skills library, the best argument
+        that <span class="mk">skills are the new open source</span>. Look him up. Take the system.</p>
+    </section>
+
+    <!-- ===================== MARKDOWN OR ISSUES ===================== -->
+    <section class="slide s-showcase" data-section="skills &amp; mcp">
+      <div class="sc-head">
+        <div>
+          <h2 class="sc-title" data-reveal style="--i:1">Let agents talk to each other</h2>
+        </div>
+        <span class="sc-link muted" data-reveal style="--i:2">matt pocock's system · my dbatools migration</span>
+      </div>
+      <figure class="sc-shot shot-full zoomable" data-zoom="1.75" data-reveal style="--i:3">
+        <img src="images/mattpocock.png" alt="GitHub issues from the dbatools migration, over 700 issues">
+      </figure>
+    </section>
+
+    <!-- ===================== SLIDE 27d · MCP, THE ARC ===================== -->
+    <section class="slide s-close" data-section="skills &amp; mcp">
+      <h2 class="lede-xl" data-reveal>“The S in MCP<br>stands for security.”</h2>
+      <p class="close-note" data-reveal>Last year that joke landed. The spec has since grown up with OAuth 2.1 authorization, an official registry, and per-tool
+        approvals.</p>
+    </section>
+
+    <!-- ===================== READ-ONLY MCP ===================== -->
+    <section class="slide s-list" data-section="skills &amp; mcp">
+      <div class="sc-head">
+        <div>
+          <h2 class="sc-title" data-reveal>Read-only is the new hotness</h2>
+          <p class="sc-note" data-reveal>For knowledge too big or too live to freeze into a skill. A skill is frozen at write time; these query the current version. All reach, zero risk.</p>
+        </div>
+      </div>
+      <div class="hooks" data-reveal>
+        <div class="hook"><span class="hk">Microsoft Learn</span><span class="hd">The whole docs library, in-context. Every
+            product should ship one.</span></div>
+        <div class="hook"><span class="hk">mcp.dbatools.io</span><span class="hd">Mine. dbatools, queryable and read-only by
+            design.</span></div>
+        <div class="hook"><span class="hk">GitHub + gh</span><span class="hd">Read the repo through MCP; act through the
+            <code>gh</code> CLI you already audit.</span></div>
+        <div class="hook"><span class="hk">Cloudflare Docs</span><span class="hd">The whole docs library, in-context.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SQL AGENT WARNING ===================== -->
+    <section class="slide s-showcase" data-section="guardrails">
+      <div class="sc-head">
+        <div>
+          <h2 class="sc-title" data-reveal>Keep AI agents out of SQL Server Agent</h2>
+        </div>
+      </div>
+      <figure class="sc-shot shot-full" data-reveal style="--i:2">
+        <img src="images/sql-agent.png" alt="SQL Server Agent escalation chain">
+      </figure>
+    </section>
+
+    <!-- ===================== SQL SERVER 2025 MCP ===================== -->
+    <section class="slide s-quote" data-section="§00 · nine seconds">
+      <blockquote data-reveal style="--i:1">Agents never interact directly with your database.</blockquote>
+      <p class="attrib" data-reveal style="--i:2"><b>Microsoft</b>, SQL Server 2025 docs
+        <span class="attrib-more">Expose the operation, not the database. <span class="mk">The SQL MCP Server hands agents
+            scoped tools behind RBAC.</span></span>
+      </p>
+    </section>
+
+    <!-- ===================== THE DML TOOLS ===================== -->
+    <section class="slide s-list" data-section="§00 · nine seconds">
+      <div class="sc-head">
+        <div>
+          <h2 class="sc-title" data-reveal>Microsoft SQL Server MCP</h2>
+        </div>
+        <a class="sc-link" data-reveal="with-prev"
+          href="https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/overview" target="_blank"
+          rel="noopener">Microsoft Learn <span class="arr">↗</span></a>
+      </div>
+      <div class="hooks" data-reveal>
+        <div class="hook"><span class="hk">describe_entities</span><span class="hd">Lists what the current role can see.
+            Reads the config, never the database.</span></div>
+        <div class="hook"><span class="hk">read_records</span><span class="hd">Entity plus filter. The server writes the
+            parameterized SELECT.</span></div>
+        <div class="hook"><span class="hk">create_record</span><span class="hd">Typed fields, validated against the entity's
+            schema.</span></div>
+        <div class="hook"><span class="hk">update_record</span><span class="hd">Key plus fields. Touches only columns the
+            role can write.</span></div>
+        <div class="hook"><span class="hk">delete_record</span><span class="hd">Key required. One config line disables it
+            everywhere.</span></div>
+        <div class="hook"><span class="hk">execute_entity</span><span class="hd">Runs an actual stored procedure you already
+            wrote.</span></div>
+      </div>
+    </section>
+
+    <!-- ===================== WRAPPING UP ===================== -->
+    <section class="slide s-close" data-section="§07 · the honest part">
+      <h2 class="lede-xl" data-reveal>Wrapping up</h2>
+    </section>
+
+    <!-- ===================== MICROSOFT / THE CATCH (FOWLER) ===================== -->
+    <section class="slide s-showcase" data-section="§07 · the honest part">
+      <div class="sc-head">
+        <div>
+          <h2 class="sc-title" data-reveal style="--i:1">Speed comes with overhead</h2>
+        </div>
+        <span class="sc-link muted" data-reveal style="--i:2">david fowler · microsoft</span>
+      </div>
+      <p class="sc-note" data-reveal style="--i:2">David Fowler's team shipped faster. Then came the review queue, the
+        maintenance, and the ownership nobody planned for. Microsoft also cut Copilot subsidies for employees when it got
+        expensive.</p>
+      <figure class="sc-shot shot-full zoomable" data-zoom="1.75" data-reveal style="--i:3">
+        <img src="images/shot-fowler.png" alt="David Fowler's article, AI Made Us Faster. That Was the Problem.">
+      </figure>
+    </section>
+
+    <!-- ===================== WHAT'S OLD IS NEW ===================== -->
+    <section class="slide s-list" data-section="§07 · the honest part">
+      <div class="sc-head">
+        <div>
+          <h2 class="sc-title" data-reveal>What's old is new: I added back</h2>
+        </div>
+      </div>
+      <div class="hooks" data-reveal>
+        <div class="hook"><span class="hk">CodeQL</span><span class="hd">Static analysis for vulnerabilities.</span></div>
+        <div class="hook"><span class="hk">Dependabot</span><span class="hd">Dependency updates, back on the radar.</span>
+        </div>
+        <div class="hook"><span class="hk">Gitleaks</span><span class="hd">Secrets never reach the repo.</span></div>
+        <div class="hook"><span class="hk">Semgrep</span><span class="hd">Pattern-based security scanning.</span></div>
+        <div class="hook"><span class="hk">Trivy</span><span class="hd">Container and dependency CVEs.</span></div>
+        <div class="hook"><span class="hk">PSScriptAnalyzer</span><span class="hd">Linting for every script it
+            writes.</span></div>
+        <div class="hook"><span class="hk">OWASP ZAP</span><span class="hd">Dynamic attacks against what ships.</span></div>
+        <div class="hook"><span class="hk">jscpd</span><span class="hd">Copy-paste detection. AI loves to repeat
+            itself.</span></div>
+      </div>
+    </section>
+
+    <!-- ===================== CLOSING ===================== -->
+    <section class="slide s-close" data-section="§08 · closing">
+      <h2 class="lede-xl" data-reveal style="--i:1">CLAUDE.md is a suggestion. <span class="mk">Well-written hooks are
+          enforcement.</span></h2>
+      <p class="close-note" data-reveal style="--i:2">When writing AI-enabled apps, expose the operation, not the database.</p>
+    </section>
+  </div>
+</div>
+
+<div id="lightbox" aria-hidden="true">
+  <span class="lb-hint">esc / click to close</span>
+  <img alt="">
+</div>
+
+<script src="deck.js"></script>
+<script>
+(() => {
+  const lightbox = document.getElementById('lightbox');
+  const image = lightbox?.querySelector('img');
+  if (!lightbox || !image) return;
+
+  const close = () => {
+    lightbox.classList.remove('open');
+    image.style.width = '';
+  };
+  const open = figure => {
+    const source = figure.querySelector('img');
+    if (!source) return;
+    const scale = Number.parseFloat(figure.dataset.zoom || '');
+    image.src = source.currentSrc || source.src;
+    image.alt = source.alt;
+    image.style.width = Number.isFinite(scale) ? `${Math.round(source.naturalWidth * scale)}px` : '';
+    lightbox.classList.add('open');
+  };
+
+  document.querySelectorAll('.sc-shot.zoomable').forEach(figure => {
+    figure.addEventListener('click', event => {
+      event.stopPropagation();
+      open(figure);
+    });
+  });
+  lightbox.addEventListener('click', close);
+  addEventListener('keydown', event => {
+    if (!lightbox.classList.contains('open')) return;
+    // Slide navigation should dismiss the lightbox so the next slide isn't
+    // hidden behind the still-open overlay.
+    if (event.key === 'Escape' || event.key === 'ArrowRight' || event.key === 'ArrowLeft'
+      || event.key === ' ' || event.key === 'PageDown' || event.key === 'PageUp') close();
+  });
+})();
+</script>
+</body>
+</html>
