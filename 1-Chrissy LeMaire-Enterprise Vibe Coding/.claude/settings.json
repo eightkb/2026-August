@@ -1,0 +1,73 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          { "type": "command", "command": "bash .claude/hooks/sql/pre-write-trust-cert.sh" },
+          { "type": "command", "command": "bash .claude/hooks/sql/pre-write-sql-interpolation.sh" },
+          { "type": "command", "command": "bash .claude/hooks/sql/pre-write-nvarchar-max.sh" },
+          { "type": "command", "command": "bash .claude/hooks/sql/pre-write-sequential-guid.sh" },
+          { "type": "command", "command": "bash .claude/hooks/sql/pre-write-audit-columns.sh" },
+          { "type": "command", "command": "bash .claude/hooks/sql/pre-write-drop-guard.sh" },
+          { "type": "command", "command": "bash .claude/hooks/general/pre-edit-read-check.sh" },
+          { "type": "command", "command": "bash .claude/hooks/general/pre-write-tdd-gate.sh" }
+        ]
+      },
+      {
+        "matcher": "Bash",
+        "hooks": [
+          { "type": "command", "command": "bash .claude/hooks/sql/pre-bash-sql-guard.sh" },
+          { "type": "command", "command": "bash .claude/hooks/general/pre-read-credential-sniff.sh" }
+        ]
+      },
+      {
+        "matcher": "Read|Grep|Glob",
+        "hooks": [
+          { "type": "command", "command": "bash .claude/hooks/general/pre-read-credential-sniff.sh" }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Read",
+        "hooks": [
+          { "type": "command", "command": "bash .claude/hooks/general/post-read-track.sh" }
+        ]
+      },
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          { "type": "command", "command": "bash .claude/hooks/general/post-write-filesize.sh" }
+        ]
+      },
+      {
+        "matcher": "Write",
+        "hooks": [
+          {
+            "type": "agent",
+            "if": "Write(**/*.md)",
+            "prompt": "Run the humanizer skill on the file in $ARGUMENTS.",
+            "timeout": 120
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "matcher": "compact|resume",
+        "hooks": [
+          { "type": "command", "command": "bash .claude/hooks/general/session-reset-reads.sh" }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          { "type": "command", "command": "bash .claude/hooks/stop/stop-run-tests.sh", "timeout": 120 },
+          { "type": "command", "command": "bash .claude/hooks/stop/stop-copilot-review.sh", "timeout": 660 }
+        ]
+      }
+    ]
+  }
+}

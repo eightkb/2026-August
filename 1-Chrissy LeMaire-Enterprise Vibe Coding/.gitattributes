@@ -1,0 +1,5 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Hook scripts run under Git Bash; a CRLF on the shebang line kills them.
+.claude/hooks/** text eol=lf
